@@ -1,5 +1,9 @@
 # AJAX training
-To launch server write
+To install node components:
+
+```npm install```
+
+To launch server:
 
 ```node server.js```
 
