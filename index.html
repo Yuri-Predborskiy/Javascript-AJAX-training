@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	</style>
+</head>
+<body>
+<div class="container">
+    <div id="form-new" class="form">
+        <div class="header">Register new user</div>
+        <ul>
+            <li>
+                <label for="uid">ID</label>
+                <input type="text" class="field" data-validation="uid" id="uid">
+            </li>
+            <li>
+                <label for="name">Name</label>
+                <input type="text" class="field" data-validation="name" id="name">
+            </li>
+            <li>
+                <label for="date">Date</label>
+                <input type="date" class="field" data-validation="date" id="date">
+            </li>
+            <li>
+                <label for="address">Address</label>
+                <input type="text" class="field" data-validation="address" id="address">
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="text" class="field" data-validation="email" id="email">
+            </li>
+        </ul>
+        <button class="btn btn-l" id="btn-create">Submit</button>
+    </div>
+    <div class="user-list">
+        <h2>User list:</h2>
+        <ul id="list"></ul>
+    </div>
+</div>
+    <div class="modal-container hidden">
+        <div id="overlay" class="overlay"></div>
+        <div class="modal"></div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+

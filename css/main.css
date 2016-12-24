@@ -1,0 +1,162 @@
+
+body {
+	margin: 0;
+}
+
+.container {
+	padding: 20px 10px;
+}
+
+.header {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.error {
+	border: 2px solid red;
+}
+
+.success {
+	border: 2px solid green;
+}
+
+.form {
+	width: 415px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid grey;
+	border-radius: 20px;
+	background-color: white;
+}
+
+.form::after {
+	visibility: hidden;
+	display: block;
+	content: ' ';
+	clear: both;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li {
+	margin-bottom: 10px;
+}
+
+ul li label, ul li input {
+	font-size: 125%;
+	width: 300px;
+}
+
+ul li label {
+	display: inline-block;
+	width: 100px;
+	padding: 3px;
+}
+
+.user-data {
+	position: relative;
+	overflow: hidden;
+	width: 230px;
+	margin: 0;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+.user-data:hover .controls {
+	top: 5px;
+}
+
+.user-data .controls {
+	position: absolute;
+	top: -30px;
+	right: 5px;
+	transition: all 0.2s ease-in-out;
+}
+
+.user-data .controls .btn {
+	float: left;
+	margin-right: 5px;
+}
+
+.user-list {
+	width: 750px;
+	margin: 0 auto;
+}
+
+.user-list h2 {
+	text-align: center;
+}
+
+#list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#list li {
+	margin: 5px 10px;
+}
+
+#list .user-data {
+	box-sizing: border-box;
+}
+
+.btn.btn-l {
+	width: 150px;
+	height: 40px;
+}
+
+.btn {
+	display: block;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 125%;
+	background-color: #337ab7;
+	border: 1px solid #2e6da4;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #286090;
+	border-color: #204d74;
+}
+
+.btn:active:hover {
+	background-color: #204d74;
+	border-color: ##122b40;
+}
+
+.modal-container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.overlay {
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.8;
+	background-color: black;
+}
+
+.modal {
+	height: 0;
+	position: relative;
+	z-index: 200;
+	margin: 50px auto;
+}
+
+.hidden {
+	display: none;
+}
